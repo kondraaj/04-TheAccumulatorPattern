@@ -103,7 +103,6 @@ def draw_parallel_lines(n, point, length, window):
         end.y = end.y + 30
     window.render()
 
-
     # ------------------------------------------------------------------
     # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
@@ -177,7 +176,7 @@ def draw_lines(n, point, window):
     window.render()
 
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
