@@ -154,12 +154,15 @@ def run_test_draw_circles_from_rectangle():
     # Test 1:
     rectangle = rg.Rectangle(rg.Point(100,100), rg.Point(140, 130))
     rectangle.fill_color = 'green'
-    rectangle.outline_color = 'blue'
+    rectangle.outline_color(blue)
     rectangle.outline_thickness = 25
     draw_circles_from_rectangle(6, 5, rectangle, window1)
 
     # Test 2:
-    rectangle = rg.Rectangle(rg.Point(350, 350), rg.Point(200, 300))
+    rectangle = rg.Rectangle(rg.Point(210, 220), rg.Point(215, 270))
+    rectangle.fill_color = 'gray'
+    rectangle.outline_color = 'red'
+    rectangle.outline_thickness = 10
     draw_circles_from_rectangle(4, 7, rectangle, window1)
     window1.close_on_mouse_click()
 
@@ -171,9 +174,11 @@ def run_test_draw_circles_from_rectangle():
     window2 = rg.RoseWindow(525, 300, title)
 
     # Test 3:
-    rectanlge = rg.Rectangle(rg.Point(50, 50), rg.Point(10, 20)
+    rectanlge = rg.Rectangle(rg.Point(60, 100), rg.Point(10, 20)
     rectangle.fill_color = 'blue'
-    draw_circles_from_rectangle(2, 2, rectangle, window2)
+    rectangle.outline_color = 'yellow'
+    rectangle.outline_thickness = 5
+    draw_circles_from_rectangle(3, 3, rectangle, window2)
 
     window2.close_on_mouse_click()
 
